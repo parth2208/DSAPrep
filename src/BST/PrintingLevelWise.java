@@ -5,6 +5,8 @@ import java.util.Queue;
 
 public class PrintingLevelWise {
 
+    AlgebraOfNodes sum = new AlgebraOfNodes();
+
     public void printAtGivenLevel(Node node, int level){
 
         if (node == null){
@@ -16,6 +18,17 @@ public class PrintingLevelWise {
 
         printAtGivenLevel(node.left, level-1);
         printAtGivenLevel(node.right, level-1);
+    }
+
+    public void levelOrderRecursion(Node node){
+        if (node == null){
+            return;
+        }
+
+
+
+
+
     }
 
     public void levelOrderQueue(Node node){
